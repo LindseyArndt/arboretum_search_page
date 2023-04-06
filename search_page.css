@@ -1,3 +1,75 @@
-@charset "utf-8";
-/* CSS Document */
+#search {
+    text-align: center;
+    font-size: 30px;
+    padding: 0px 12px;
+    width: 50%;
+    height: 50%;
+    background-color: #406A67;
+    border: 5px solid gray;
+    margin: auto;
+}
 
+#bar{
+    background-color: #ffffff;
+    color: #406A67;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+
+#title{
+    font-size: 50px;
+	background-color: #ffffff;
+}
+
+/* https://www.geeksforgeeks.org/html-course-creating-navigation-menu/?ref=lbp */
+#menu{
+	float: right;
+	width: 70%;
+	height: 100%;
+	margin: none;
+    font-size: 20px;
+	background-color: #ffffff;
+}
+
+#menu ul{
+	text-align: center;
+	float: right;
+	margin: none;
+	background-color: #ffffff;
+}
+
+#menu li{
+	display: inline-block;
+	padding: none;
+	margin: none;
+	
+}	
+
+#menu li a, #menu li span{
+	display: inline-block;
+	padding: 0em 1.5em;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+
+#menu li a{
+	color: rgb(0, 0, 0);
+	background-color: #ffffff;
+}
+
+#menu li:hover a, #menu li span{
+	background: #ffffff;
+	color: #000000;
+	border-left: 1px solid #ffffff;
+	text-decoration: none;
+}
+
+#content{
+    margin-top: 185px;
+}
