@@ -9,5 +9,19 @@
 </head>
 
 <body>
+	<script>
+		function loadXMLDoc() {
+        //Code to do XML HTTP request (see slides) goes here
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                // Run a function to handle XML data recv’d
+                myFunction(this);
+            }
+        };
+        xhttp.open("GET", "1.xml", true);
+        xhttp.send();
+    	}
+	</script>
 </body>
 </html>
