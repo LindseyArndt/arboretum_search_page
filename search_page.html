@@ -8,10 +8,23 @@
         <title>Search_page</title>
     </head>
 
+    <header id= "bar_up">
+        <h1> 
+            <div id="image">Arb Icon</div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="search_page.php">Search</a></li>
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="tours.php">Tours</a></li>
+                    <li><a href="kwizz.php">Kwizz</a></li>
+                </ul>
+            </div>
+        </h1>
+    </header>
+
     <body>
-        <?php
-        include("menu.php")
-        ?>
+
         <div>
             <form method="POST">
                 <input id ="inputSize" placeholder="Search... " type="text" name="searchBox" value=""><br>
@@ -53,4 +66,12 @@
             </script>
         </div>
     </body>
+
+    <footer id= "bar_down">
+        <ul>
+            <li><a href="winona.edu">Winona.edu</a></li>
+            <li>Contact info</li>
+        </ul>
+    </footer>
+    
 </html>
