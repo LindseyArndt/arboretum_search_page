@@ -9,6 +9,11 @@
     </head>
 
     <body>
+
+        <?php
+        include("menu.php")
+        ?>
+        
         <script>
             function loadXMLDoc() {
                 //Code to do XML HTTP request (see slides) goes here
