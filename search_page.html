@@ -28,29 +28,14 @@
 
     <div>
         <form method="POST">
-            <input id="inputSize" placeholder="Search... " type="text" name="searchBox" value=""><br>
-            <input id="inputSize" type="submit" onclick="loadXMLDoc;"><br>
-            <p id="hint"> *Press the Search button to view available books* </p>
+            <input id="inputSize" placeholder="Search... " type="text" name="searchBox"><br>
+            <input id="inputSize" type="submit" onsubmit="loadXMLDoc()"><br>
+            <p id="hint"> *Press the Search button to view trees* </p>
             <p id="data"></p>
         </form>
         <!-- This is where the new tree image will go -->
         <p id="newHTML"></p>
         <script>
-
-            $("form").submit(
-                function (e) {
-                    // prevent jQuery refresh the whole page after appending the new element. See the following page for more detail
-                    // https://stackoverflow.com/questions/31357050/jquerypage-refreshes-after-appending-html-with-html
-                    e.preventDefault();
-
-                    $.post("bookSearch.php", $(this).serialize(),
-                        function (data) { // callback function
-                            $("#data").html(data);
-                        },
-                    );
-                }
-            );
-
             function loadXMLDoc() {
                 //Code to do XML HTTP request (see slides) goes here
                 var xhttp = new XMLHttpRequest();
