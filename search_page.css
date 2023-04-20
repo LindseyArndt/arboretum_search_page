@@ -23,30 +23,30 @@ html{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	margin: auto;
-}
-
-.search {
+	margin-right: 500px;
 	width: 50%;
 	position: relative;
 	display: flex;
 }
 
+
 .searchButton {
 	width: 40px;
 	height: 36px;
-	border: 1px solid #00B4CC;
-	background: #00B4CC;
+	border: 1px solid #314837;
+	background: #314837;
 	text-align: center;
 	color: #fff;
 	border-radius: 0 5px 5px 0;
 	cursor: pointer;
 	font-size: 20px;
+	background-image: url('');
+
 }
 
 .searchBar{
 width: 100%;
-  border: 3px solid #00B4CC;
+  border: 3px solid #314837;
   border-right: none;
   padding: 5px;
   height: 20px;
