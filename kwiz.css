@@ -1,11 +1,30 @@
 p{
     text-align: center;
     font-size: 30px;
+    color:black;
     padding: 100px 12px;
     width: 50%;
     height: 50%;
     background-color: #ffffffaa;
     margin: auto;
+}
+
+html{
+	background-image: url('https://news.winona.edu/wp-content/uploads/2016/04/Arboretum1.jpg');
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	color: white;
+}
+
+#search{
+    text-align: center;
+    font-size: 30px;
+    padding: 100px 12px;
+    width: 50%;
+    height: 50%;
+    background-color: #ffffffaa;
+    margin: auto;
+	margin-top: 200px;
 }
 
 #bar_up{
