@@ -9,11 +9,12 @@ html{
 #search{
     text-align: center;
     font-size: 30px;
-    padding: 500px 12px;
+    padding: 100px 12px;
     width: 50%;
     height: 50%;
     background-color: #ffffffaa;
     margin: auto;
+	margin-top: 200px;
 }
 
 #bar_down{
