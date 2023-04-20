@@ -1,33 +1,31 @@
 <!doctype html>
 <html>
 
-<header>
+<head>
     <meta charset="utf-8">
     <meta name="author" content="Lindsey, Ahlea, Karis, Angie">
     <title>Tree Search</title>
     <link rel="stylesheet" href="search_page.css">
-</header>
+</head>
 <!-- id= "bar_up" -->
 
-<head>
+<header id = bar_up>
     <h1>
-        <!-- id image -->
-        <div>Arb Icon</div>
-        <!-- id menu -->
-        <div>
+        <div id = menu>
             <ul>
                 <li><a href="search_page.php">Search</a></li>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="tours.php">Tours</a></li>
                 <li><a href="kwizz.php">Kwizz</a></li>
+                <!-- <li id = icon><img style = "width: 160px; height: 80px;"src = "https://openriver.winona.edu/assets/md5images/9c219dc65e0cea6b146b6e2cc3f39453.png" alt = "Arboretumn icon"></li> -->
             </ul>
         </div>
     </h1>
-</head>
+</header>
 <!-- id="search" -->
 
 <body>
-    <div>
+    <div id = search>
         <!-- method="POST" -->
         <form method="POST" onsubmit="loadXMLDoc();">
             <!-- id ="inputSize" -->
@@ -37,8 +35,7 @@
             <p id="newHTML"></p>
         </form>
     </div>
-    <div>
-    </div>
+
     <script>
         function loadXMLDoc() {
             alert("called");
@@ -84,7 +81,7 @@
     <footer id="bar_down">
         <ul>
             <li><a href="winona.edu">Winona.edu</a></li>
-            <li>Contact info</li>
+            <li><a>Contact info</a></li>
         </ul>
     </footer>
 </body>
