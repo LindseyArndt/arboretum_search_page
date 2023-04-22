@@ -4,6 +4,7 @@
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 <title>quiz page</title>
 <link rel="stylesheet" href="kwiz.css">
+<script src="kwiz.js"></script>
 
 <header id = bar_up>
     <h1>
@@ -225,27 +226,6 @@
         
         <div class="result" id="result"></div>
       </div>
-
-
-      <script>
-        const quizForm = document.getElementById('quiz-form');
-        const resultDiv = document.getElementById('result');
-        const correctAnswers = ['a', 'c'];
-        
-        quizForm.addEventListener('submit', e => {
-          e.preventDefault();
-          
-          let score = 0;
-          const userAnswers = [quizForm.q1.value,quizForm.q2.value];
-          userAnswers.forEach((answer, index) => {
-            if (answer === correctAnswers[index]) {
-              score += 1;
-            }
-          });
-        
-          resultDiv.innerHTML = `Your score is ${score}/${correctAnswers.length}`;
-        });
-    </script>
 
 </body>
 </html>
