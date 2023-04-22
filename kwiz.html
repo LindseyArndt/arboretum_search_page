@@ -1,80 +1,329 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 <title>quiz page</title>
-<link rel="stylesheet" href="kwiz.css">
-</head>
+<!--<link rel="stylesheet" href="kwiz.css">-->
 
 <header id = bar_up>
     <h1>
-        <div id = menu>
+        <!-- <div id = menu>
             <ul>
                 <li><a href="search_page.php">Search</a></li>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="tours.php">Tours</a></li>
                 <li><a href="kwizz.php">Kwizz</a></li>
-                <!-- <li id = icon><img style = "width: 160px; height: 80px;"src = "https://openriver.winona.edu/assets/md5images/9c219dc65e0cea6b146b6e2cc3f39453.png" alt = "Arboretumn icon"></li> -->
+                <li id = icon><img style = "width: 160px; height: 80px;"src = "https://openriver.winona.edu/assets/md5images/9c219dc65e0cea6b146b6e2cc3f39453.png" alt = "Arboretumn icon"></li>
             </ul>
-        </div>
+        </div> -->
     </h1>
 </header>
 
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      background-color: aliceblue;
+    }
+    form{
+      margin-top:20px;
+    }
+    .quiz-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .question {
+      width:45%;
+      margin-bottom: 20px;
+      background-color: #fff;
+      padding:20px;
+    }
+    .question:nth-child(odd){
+      margin-right:5%;
+    }
+    .question p{
+      font-weight: bold;
+    }
+    
+    .answers {
+      margin-bottom: 20px;
+    }
+    .answers label:not(:first-child){
+      border-top:1px solid #e0e0e0;
+    }
+    
+    label {
+      padding:10px 0;
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+    
+    .submit-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    
+    .result {
+      font-weight: bold;
+      font-size: 22px;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+
+
 <body>
 
-<p>
-        1. What is your star sign?<br>
-            a. Aries, Taurus, Gemini (March 21-June 21)<br>
-            b. Cancer, Leo, Virgo (June 22-September 22)<br>
-            c. Libra, Scorpio, Sagittarius (September 23-December 21)<br>
-            d. Capricorn, Aquarius, Pisces (December 22-March 20)<br><br>
+    <div class="quiz-container">
+        <h1>Multiple Choice Quiz</h1>
+        <hr>
+        <form id="quiz-form">
+          <div class="d-flex">
+            <div class="question">
+              <p>1. What is your star sign?</p>
+              <div class="answers">
+                <label>
+                  <input type="radio" name="q1" value="a">
+                  Aries, Taurus, Gemini (March 21-June 21)
+                </label>
+                <label>
+                  <input type="radio" name="q1" value="b">
+                  Cancer, Leo, Virgo (June 22-September 22)
+                </label>
+                <label>
+                  <input type="radio" name="q1" value="c">
+                  Libra, Scorpio, Sagittarius (September 23-December 21)
+                </label>
+                <label>
+                  <input type="radio" name="q1" value="d">
+                  Capricorn, Aquarius, Pisces (December 22-March 20)
+                </label>
+              </div>
+            </div>
 
-        2. Of these colors, which is your favorite?<br>
-            a. Gray<br>
-            b. Orange<br>
-            c. Green<br>
-            d. Blue<br><br>
+            <div class="question">
+              <p>2. Of these colors, which is your favorite?</p>
+              <div class="answers">
+                <label>
+                  <input type="radio" name="q2" value="a">
+                  Gray
+                </label>
+                <label>
+                  <input type="radio" name="q2" value="b">
+                  Orange
+                </label>
+                <label>
+                  <input type="radio" name="q2" value="c">
+                  Green
+                </label>
+                <label>
+                  <input type="radio" name="q2" value="d">
+                  Blue
+                </label>
+              </div>
+            </div>
 
-        3. Are you an introvert or an extrovert?<br>
-            a. Introvert<br>
-            b. Extrovert<br><br>
+            <div class="question">
+                <p>3. Are you an introvert or an extrovert?</p>
+                <div class="answers">
+                  <label>
+                    <input type="radio" name="q3" value="a">
+                    Introvert
+                  </label>
+                  <label>
+                    <input type="radio" name="q3" value="b">
+                    Extrovert
+                  </label>
+                </div>
+              </div>
 
-        4. What type of hair do you have?<br>
-            a. Thick and curly<br>
-            b. Thin and straight<br>
-            c. Short and spiky<br><br>
+              <div class="question">
+                <p>4. What type of hair do you have?</p>
+                <div class="answers">
+                  <label>
+                    <input type="radio" name="q4" value="a">
+                    Thick and curly
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="b">
+                    Thin and straight
+                  </label>
+                  <label>
+                    <input type="radio" name="q4" value="c">
+                    Short and spiky
+                  </label>
+                </div>
+              </div>
 
-        5. What is your preferred sandwich order?<br>
-            a. Classic ham and cheese<br>
-            b. Burger<br>
-            c. Wrap<br>
-            d. Grilled cheese<br><br>
+              <div class="question">
+                <p>5. What is your preferred sandwich order?</p>
+                <div class="answers">
+                  <label>
+                    <input type="radio" name="q5" value="a">
+                    Classic ham and cheese
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="b">
+                    Burger
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="c">
+                    Wrap
+                  </label>
+                  <label>
+                    <input type="radio" name="q5" value="d">
+                    Grilled cheese
+                  </label>
+                </div>
+              </div>
 
-        6. Which of these animals do you prefer?<br>
-            a. Squirrel<br>
-            b. Bird<br>
-            c. Snake<br>
-            d. Bumblebee<br><br>
+              <div class="question">
+                <p>6. Which of these animals do you prefer?</p>
+                <div class="answers">
+                  <label>
+                    <input type="radio" name="q6" value="a">
+                    Squirrel
+                  </label>
+                  <label>
+                    <input type="radio" name="q6" value="b">
+                    Bird
+                  </label>
+                  <label>
+                    <input type="radio" name="q6" value="c">
+                    Snake
+                  </label>
+                  <label>
+                    <input type="radio" name="q6" value="d">
+                    Bumblebee
+                  </label>
+                </div>
+              </div>
 
-        7. Do you prefer to work alone or in a team?<br>
-            a. Alone<br>
-            b. Team<br>
-            c. Either works for you<br><br>
+              <div class="question">
+                <p>7. Do you prefer to work alone or in a team?</p>
+                <div class="answers">
+                  <label>
+                    <input type="radio" name="q7" value="a">
+                    Alone
+                  </label>
+                  <label>
+                    <input type="radio" name="q7" value="b">
+                    Team
+                  </label>
+                  <label>
+                    <input type="radio" name="q7" value="c">
+                    Either works for you
+                  </label>
+                </div>
+              </div>
 
-        8. What is your favorite season?<br>
-            a. Summer<br>
-            b. Spring<br>
-            c. Autumn<br>
-            d. Winter<br><br>
+              <div class="question">
+                <p>8. What is your favorite season?</p>
+                <div class="answers">
+                  <label>
+                    <input type="radio" name="q8" value="a">
+                    Summer
+                  </label>
+                  <label>
+                    <input type="radio" name="q8" value="b">
+                    Spring
+                  </label>
+                  <label>
+                    <input type="radio" name="q8" value="c">
+                    Autumn
+                  </label>
+                  <label>
+                    <input type="radio" name="q8" value="d">
+                    Winter
+                  </label>
+                </div>
+              </div>
 
-        9. Are you a morning person or a night owl?<br>
-            a. Morning person<br>
-            b. Night owl<br><br>
+              <div class="question">
+                <p>9. Are you a morning person or a night owl?</p>
+                <div class="answers">
+                  <label>
+                    <input type="radio" name="q9" value="a">
+                    Morning person
+                  </label>
+                  <label>
+                    <input type="radio" name="q9" value="b">
+                    Night owl
+                  </label>
+                </div>
+              </div>
 
-        10. Are you a dog person, cat person, or neither?<br>
-            a. Dog person<br>
-            b. Cat person<br>
-            c. Neither<br>
-</p>
+              <div class="question">
+                <p>10. Are you a dog person or a cat person?</p>
+                <div class="answers">
+                  <label>
+                    <input type="radio" name="q10" value="a">
+                    Dog person
+                  </label>
+                  <label>
+                    <input type="radio" name="q10" value="b">
+                    Cat person
+                  </label>
+                  <label>
+                    <input type="radio" name="q10" value="c">
+                    Neither
+                  </label>
+                </div>
+              </div>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        
+        <div class="result" id="result"></div>
+      </div>
+      <script>
+        const quizForm = document.getElementById('quiz-form');
+        const resultDiv = document.getElementById('result');
+        const correctAnswers = ['a', 'c'];
+        
+        quizForm.addEventListener('submit', e => {
+          e.preventDefault();
+          
+          let score = 0;
+          const userAnswers = [quizForm.q1.value,quizForm.q2.value];
+          userAnswers.forEach((answer, index) => {
+            if (answer === correctAnswers[index]) {
+              score += 1;
+            }
+          });
+        
+          resultDiv.innerHTML = `Your score is ${score}/${correctAnswers.length}`;
+        });
+    </script>
+
 </body>
 </html>
+
+
+
+<body>
+
+  
