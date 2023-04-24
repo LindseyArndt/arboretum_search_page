@@ -13,5 +13,5 @@ quizForm.addEventListener('submit', e => {
     }
   });
 
-  resultDiv.innerHTML = `Your score is ${score}/${correctAnswers.length}`;
+  resultDiv.innerHTML = `Your score is ${score}`;
 });
