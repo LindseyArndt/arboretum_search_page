@@ -1,0 +1,103 @@
+Austrian Pine,tree,4,yes
+Thornless Honeylocust,bush,5,no
+Autumn Purple Ash,tree,6,yes
+Butternut,bush,5,no
+Cockspur Hawthorn,tree,4,yes
+White Fir,bush,5,no
+Douglas Fir,tree,6,yes
+White Fringetree,bush,4,no
+Homestead Elm,tree,5,yes
+Littleleaf Linden,bush,5,no
+Merrill Magnolia,tree,4,yes
+Northern Catalpa,bush,5,no
+Pagoda Dogwood,tree,6,yes
+Red Maple,bush,4,no
+Ruby Red Horsechestnut,tree,5,yes
+Shagbark Hickory,bush,6,no
+Showy Mountain Ash,tree,4,yes
+American Larch,bush,5,no
+Three-Flower Maple,tree,6,yes
+Tulip Tree,bush,4,yes
+Weeping Katsura Tree,tree,5,yes
+American Yellowwood,bush,6,no
+Dolgo Crabapple,tree,4,yes
+Donald Wyman Crabapple,bush,5,no
+Golden Raindrops Crabapple,tree,6,yes
+Prairie Fire Crabapple,bush,4,no
+Spring Snow Crabapple,tree,5,yes
+Sugar Tyme Crabapple,bush,6,no
+Flowering Crabapple,tree,4,yes
+Blue Beech,bush,5,no
+Pin Cherry,tree,6,yes
+Sargent Cherry,bush,4,no
+Balsam Fir,tree,5,yes
+Bitternut Hickory,bush,6,no
+Amur Maackia,tree,4,yes
+Striped Maple,bush,5,yes
+Norway Maple,tree,6,yes
+Silver Maple,bush,4,no
+Sugar Maple,tree,5,yes
+Autumn Blaze Maple,bush,6,no
+Swamp White Oak,tree,4,yes
+Northern Pin Oak,bush,5,no
+Callery Pear,tree,6,yes
+Persian Ironwood,bush,4,no
+Eastern White Pine,tree,5,yes
+Eastern Redbud,bush,6,yes
+Dawn Redwood,tree,4,yes
+Shadblow Serviceberry,bush,5,no
+Black Spruce,tree,6,yes
+Black Walnut,bush,4,no
+Black Alder,tree,5,yes
+Amur Corktree,bush,6,no
+White Ash,tree,4,yes
+Burr Oak,bush,5,no
+Black Gum,tree,6,yes
+Black Hills Spruce,bush,4,no
+Amur Maple,tree,5,yes
+Purple Prince Crabapple,bush,6,no
+Korean Fir,tree,4,yes
+Worplesdon Sweet Gum,bush,5,no
+Yellow Buckeye,tree,6,yes
+Ginkgo, bush,4,no
+Ironwood,tree,5,yes
+Kentucky Coffeetree,bush,6,no
+River Birch,tree,4,yes
+Japanese Tree Lilac,bush,5,no
+Yellow Birch,tree,4,yes
+Fort McNair Red Horsechestnut,bush,5,no
+Common Hackberry,tree,6,yes
+Red Pine,bush,4,no
+Paper Birch,tree,5,yes
+Red Jewel Crabapple,bush,6,no
+Chinkapin Oak,tree,4,yes
+Rock Elm,bush,5,no
+Black Maple,tree,6,yes
+Japanese Maple,bush,4,no
+Freeman Maple,tree,5,yes
+Autumn Brilliance Serviceberry,bush,6,no
+American Filbert,tree,4,yes
+Hawthorn Spp.,bush,5,no
+Green Ash,tree,6,yes
+Eastern Red Cedar,bush,4,no
+Common Apple,tree,5,yes
+Norway Spruce,bush,6,no
+White Spruce,tree,4,yes
+Jack Pine,bush,5,no
+London Planetree,tree,6,yes
+Balsam Poplar,bush,4,no
+Bigtooth Aspen,tree,5,yes
+Quaking Aspen,bush,6,no
+White Oak,tree,4,yes
+Northern Red Oak,bush,5,no
+Regal Prince Oak,tree,6,yes
+Arborvitae,bush,4,no
+American Linden,tree,5,yes
+Silver Linden,bush,6,no
+Eastern Hemlock,tree,4,yes
+Siberian Elm,bush,5,no
+Ohio Buckeye,tree,6,yes
+Honeycrisp Apple,bush,4,no
+Korean Maple,tree,5,yes
+Wild Black Cherry,bush,6,no
+Red Horsechestnut,tree,4,yes
