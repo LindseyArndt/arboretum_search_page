@@ -1,6 +1,5 @@
 
 function loadXMLDoc() {
-    alert("called");
     //Code to do XML HTTP request (see slides) goes here
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
