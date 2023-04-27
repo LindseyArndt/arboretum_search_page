@@ -111,8 +111,8 @@ function myFunctionWithCollapse(xml) {
         //const page = window.open("http://127.0.0.1:5501/tree_page.html");
 
         //make button not hidden 
-
-        document.getElementById('nameID').style.visibility = 'visible';
+        document.getElementById("allTree").innerHTML = "";
+        document.getElementById('togglee').style.visibility = 'visible';
 
         document.getElementById("nameAndImage").innerHTML = txtPrint;
         document.getElementById("nameID").innerHTML = name;
