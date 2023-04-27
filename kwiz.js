@@ -1,14 +1,14 @@
 function mostlyA() {
   var x = document.getElementById("myDIV");
   if (x.innerHTML === "") {
-    x.innerHTML = "You are a Pagoda Dogwood! Check out the Tree Search page to find out more information about your tree!";
+    x.innerHTML = "You are a Pagoda Dogwood! Your healing nature and bold personality make you a favorite among friends, and your versatility allows you to enjoy a bunch of different activites. Check out the Search page to find out more information about your tree!";
    }
 }
 
 function mostlyB() {
   var x = document.getElementById("myDIV");
   if (x.innerHTML === "") {
-    x.innerHTML = "You are a Merrill Magnolia! Check out the Tree Search page to find out more information about your tree!";
+    x.innerHTML = "You are a Merrill Magnolia! Like this tree, you have a Check out the Tree Search page to find out more information about your tree!";
   }
 }
 
