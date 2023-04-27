@@ -1,22 +1,18 @@
 /* Karis is procrastinating :))))) */
 html {
     background-image: url('https://news.winona.edu/wp-content/uploads/2016/04/Arboretum1.jpg');
-    background-repeat: no-repeat;
-    color: white;
     background-size: cover;
+	color: white;
 }
 
 #search {
     text-align: center;
     font-size: 30px;
     padding: 10px 12px;
-    width: 50%;
-    height: 50%;
     background-color: #ffffffaa;
     margin: auto;
     margin-top: 200px;
-
-    height: 400px;
+    height: 475px;
     width: 700px;
     border: 1px solid #ccc;
     font: 16px/26px Georgia, Garamond, Serif;
@@ -24,7 +20,6 @@ html {
 }
 
 .wrap {
-    width: 30%;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -44,7 +39,6 @@ html {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
-    background-image: url('');
 }
 
 .searchBar {
@@ -62,20 +56,21 @@ html {
 #bar_down {
     background-color: #4B08A1;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     width: 100%;
-    top: 93%;
+    top: 95%;
     position: fixed;
-    bottom: 0;
     left: 0;
 }
 
 #bar_down ul {
     text-align: center;
-    float: top;
     background-color: #4B08A1;
     width: 100%;
+<<<<<<< Updated upstream
     padding: 0px;
+=======
+>>>>>>> Stashed changes
 }
 
 #bar_down li {
@@ -84,11 +79,11 @@ html {
 
 #bar_down li a,
 #menu li span {
-    display: inline-block;
     padding: 0em 1.5em;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
+	
 }
 
 #bar_down li a {
@@ -100,11 +95,9 @@ html {
     background-color: #3C0680;
     color: #3C0680;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
     width: 100%;
     top: 0;
     position: fixed;
-    display: inline-block;
     left: 0;
 }
 
