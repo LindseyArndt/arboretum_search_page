@@ -1,28 +1,28 @@
 function mostlyA() {
   var x = document.getElementById("myDIV");
   if (x.innerHTML === "") {
-    x.innerHTML = "Mostly A";
+    x.innerHTML = "You are a Pagoda Dogwood! Check out the Tree Search page to find out more information about your tree!";
    }
 }
 
 function mostlyB() {
   var x = document.getElementById("myDIV");
   if (x.innerHTML === "") {
-    x.innerHTML = "Mostly B";
+    x.innerHTML = "You are a Merrill Magnolia! Check out the Tree Search page to find out more information about your tree!";
   }
 }
 
 function mostlyC() {
   var x = document.getElementById("myDIV");
   if (x.innerHTML === "") {
-    x.innerHTML = "Mostly C";
+    x.innerHTML = "You are a Sugar Maple! Check out the Tree Search page to find out more information about your tree!";
   }
 }
 
 function mostlyD() {
   var x = document.getElementById("myDIV");
   if (x.innerHTML === "") {
-    x.innerHTML = "Mostly D";
+    x.innerHTML = "You are a Red Pine! Check out the Tree Search page to find out more information about your tree!";
   }
 }
 
