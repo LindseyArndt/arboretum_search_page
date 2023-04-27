@@ -208,10 +208,6 @@ html {
     }
 }
 
-#allTree {
-    width: 600px;
-}
-
 #allTree div {
     font-size: 30px;
     background-color: rgba(0, 0, 0, 0.246);
@@ -219,17 +215,17 @@ html {
     border-radius: 20px;
     display: inline-block;
 	float: left;
-	padding: 10px 5px 5px 5px;
+	padding: 5px 5px 0px 5px;
 	width: 690px;
 }
 
 img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     float: left;
     border-radius: 25%;
-    padding: 0px 0px 30px 0px;
+    padding: 0px 0px 30px 20px;
 }
 
 .collapsible {
