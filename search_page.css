@@ -55,7 +55,8 @@ html {
     height: 20px;
     border-radius: 5px 0 0 5px;
     outline: none;
-    color: #9DBFAF;
+    color: #000000;
+	font-size: 10px;
 }
 
 #bar_down {
@@ -217,10 +218,16 @@ html {
     padding: 10px 5px;
     border-radius: 20px;
     display: inline-block;
+<<<<<<< Updated upstream
 
     float: left;
     padding: 10px 5px 5px 5px;
 
+=======
+	float: left;
+	padding: 10px 5px 5px 5px;
+	width: 690px;
+>>>>>>> Stashed changes
 }
 
 img {
@@ -253,7 +260,7 @@ img {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f2f386;
+    background-color: rgb(0, 0, 0, 0.246);
     color: black;
 }
 
