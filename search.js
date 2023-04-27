@@ -69,7 +69,7 @@ function myFunctionWithCollapse(xml) {
         //document.getElementById("newHTML").appendChild(button);
     }
     else {
-        document.getElementById("tree").innerHTML = "This tree does not exist. Please type in another tree.";
+        document.getElementById("nameID").innerHTML = "This tree does not exist. Please type in another tree.";
     }
 }
 
