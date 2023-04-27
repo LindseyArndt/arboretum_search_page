@@ -218,16 +218,9 @@ html {
     padding: 10px 5px;
     border-radius: 20px;
     display: inline-block;
-<<<<<<< Updated upstream
-
-    float: left;
-    padding: 10px 5px 5px 5px;
-
-=======
 	float: left;
 	padding: 10px 5px 5px 5px;
 	width: 690px;
->>>>>>> Stashed changes
 }
 
 img {
