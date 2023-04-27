@@ -172,3 +172,11 @@ width: 100%;
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+.openbtn{
+	position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    margin-left: 50px;
+}
