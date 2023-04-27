@@ -14,10 +14,10 @@
     <h1>
         <div id=menu>
             <ul>
-                <li><a href="search_page.php">Search</a></li>
+                <li><a href="search_page.html">Search</a></li>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="tours.php">Tours</a></li>
-                <li><a href="kwizz.php">Kwizz</a></li>
+                <li><a href="kwiz.html">Kwizz</a></li>
                 <!-- <li id = icon><img style = "width: 160px; height: 80px;"src = "https://openriver.winona.edu/assets/md5images/9c219dc65e0cea6b146b6e2cc3f39453.png" alt = "Arboretumn icon"></li> -->
             </ul>
         </div>
@@ -36,6 +36,67 @@
             <p id="newHTML"></p>
         </form>
     </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">filter</a>
+        <a href="#">filter</a>
+        <a href="#">filter</a>
+        <a href="#">filter</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer;" class="openbtn" onclick="openNav()">&#9776;</span>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        function loadXMLDoc() {
+            alert("called");
+            //Code to do XML HTTP request (see slides) goes here
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    // Run a function to handle XML data recv’d
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET", "1.xml", true);
+            xhttp.send();
+        }
+
+        function myFunction(xml) {
+            var x, i, xmlDoc, txt;
+            xmlDoc = xml.responseXML; //Response returned as XML data
+            txt = "";
+            entered = String(document.getElementById("searchBox").value);
+            x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
+            console.log(x[1]);
+            console.log(entered);
+            alert(entered);
+            //"Austrian Pine"
+            for (i = 0; i < x.length; i++) {
+                console.log(x[i].childNodes[1]);
+                if ((x[i].childNodes[1].innerHTML) === String(entered)) {
+                    txt += x[i].childNodes[1].innerHTML + "<br>";
+                    console.log(x[i].childNodes[1].innerHTML);
+                    break;
+                }
+
+            }
+            console.log(txt);
+            image = x[i].childNodes[0].innerHTML;
+            txt += "<img src=" + image + ">";
+            document.getElementById("newHTML").innerHTML = txt;
+
+        }
+    </script>
 
     <footer id="bar_down">
         <ul>

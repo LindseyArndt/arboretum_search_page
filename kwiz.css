@@ -1,3 +1,10 @@
+/* html{
+	background-image: url('https://news.winona.edu/wp-content/uploads/2016/04/Arboretum1.jpg');
+	background-size: cover; 
+	background-repeat: no-repeat; 
+	color: white;
+} */
+
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -66,3 +73,76 @@ body {
     border-radius: 5px;
     text-align: center;
   }
+
+  #bar_up{
+    background-color: #152c18;
+    color: #152c18;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: inline-block;
+}
+
+#menu{
+    font-size: 20px;
+	background-color: #152c18;
+}
+
+#menu ul{
+	text-align: center;
+	float: top;
+	background-color: #152c18;
+}
+
+#menu li{
+	display: inline-block;
+}	
+
+#menu li a, #menu li span{
+	display: inline-block;
+	padding: 0em 1.5em;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#menu li a{
+	color: rgb(255, 255, 255);
+	background-color: #152c18;
+}
+
+#bar_down{
+  background-color:#b9b59f;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  width: 100%;
+  top: 93%;
+  position: fixed;
+bottom: 0;
+}
+
+#bar_down ul{
+text-align: center;
+float: top;
+background-color: #b9b59f;
+width: 100%;
+}
+
+#bar_down li{
+display: inline-block;
+}	
+
+#bar_down li a, #menu li span{
+display: inline-block;
+padding: 0em 1.5em;
+text-decoration: none;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+#bar_down li a{
+color: rgb(0, 0, 0);
+background-color: #b9b59f;
+}
