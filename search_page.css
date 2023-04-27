@@ -37,8 +37,8 @@ html {
 .searchButton {
     width: 40px;
     height: 36px;
-    border: 1px solid #314837;
-    background: #314837;
+    border: 1px solid #3C0680;
+    background: #3C0680;
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
@@ -50,7 +50,7 @@ html {
 
 .searchBar {
     width: 100%;
-    border: 3px solid #314837;
+    border: 3px solid #3C0680;
     border-right: none;
     padding: 5px;
     height: 20px;
@@ -96,8 +96,8 @@ html {
 }
 
 #bar_up {
-    background-color: #152c18;
-    color: #152c18;
+    background-color: #3C0680;
+    color: #3C0680;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     width: 100%;
@@ -109,13 +109,13 @@ html {
 
 #menu {
     font-size: 20px;
-    background-color: #152c18;
+    background-color: #3C0680;
 }
 
 #menu ul {
     text-align: center;
     float: top;
-    background-color: #152c18;
+    background-color: #3C0680;
 }
 
 #menu li {
@@ -129,7 +129,7 @@ html {
     font-weight: 600;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    background-color: #152c18;
+    background-color: #3C0680;
 }
 
 #icon {
@@ -193,7 +193,7 @@ html {
 
     #menu {
         font-size: 15px;
-        background-color: #152c18;
+        background-color: #3C0680;
     }
 
     #menu li a {
@@ -204,7 +204,7 @@ html {
         padding-top: 10px;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
-        background-color: #152c18;
+        background-color: #3C0680;
     }
 }
 
