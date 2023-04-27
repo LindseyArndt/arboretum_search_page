@@ -31,22 +31,22 @@
 
 <body>
     <div class="search" id=search>
-        <!-- method="POST" -->
+
         <form method="POST" class="wrap">
-            <!-- id ="inputSize" -->
+
             <input id="searchBox" placeholder="Search... " type="text" name="searchBox" class="searchBar"><br>
             <button type="button" class="searchButton" onclick="loadXMLDoc()"><i class="fa fa-search"></i></button>
             <button onclick="showAll()" type="button">Show All</button>
-
-            <!-- id="data" -->
         </form>
-        <p id="newHTML"></p>
-        <div>
-            <col>
-            <p id="tree"></p>
-            </col>
+        <!--Trying the collapsible-->
+        <button id="nameID" type="button" class="collapsible" onclick="collapse()" style="visibility: hidden;"></button>
+
+        <div class="content">
+            <p id="nameAndImage"></p>
         </div>
     </div>
+
+
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
