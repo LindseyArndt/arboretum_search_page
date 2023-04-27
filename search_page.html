@@ -89,7 +89,7 @@
 
 
         <div>
-            <button onclick="filters()" type="button">Apply Filters</button>
+            <button class="filter" onclick="filters()" type="button">Apply Filters</button>
         </div>
     </div>
 
@@ -222,34 +222,37 @@
                     }
                 }
             }
-            for (i = 0; i < items.length; i++) {
-                //print image from xml file 
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function () {
-                    if (this.readyState == 4 && this.status == 200) {
-                        xmlDoc = this.responseXML; //Response returned as XML data
-                        txt = "";
-                        x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
-                        for (i = 0; i < items.length; i++) {
-                            console.log("this is the result of the filter" + items[i][0]);
-
-                            for (il = 0; il < x.length; il++) {
-                                if ((x[il].childNodes[1].innerHTML) === items[i][0]) {
-                                    image = x[il].childNodes[0].innerHTML;
-                                    image = "<img src=" + image + "\"alt =\"This is an image of a tree on the Winona State campus\">";
-                                    name = x[il].childNodes[1].innerHTML;
-                                    document.getElementById("tree").innerHTML += "<div><p>" + name + image + "</div></p><br>";
-                                    break;
-                                }
-                            }
-
-
-                        }
-                    }
-                };
-                xhttp.open("GET", "1.xml", true);
-                xhttp.send();
+            for (i = 0; i < items.length; i++) { 
+                console.log(items[i][0]);
             }
+            // for (i = 0; i < items.length; i++) {
+            //     //print image from xml file 
+            //     var xhttp = new XMLHttpRequest();
+            //     xhttp.onreadystatechange = function () {
+            //         if (this.readyState == 4 && this.status == 200) {
+            //             xmlDoc = this.responseXML; //Response returned as XML data
+            //             txt = "";
+            //             x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
+            //             for (i = 0; i < items.length; i++) {
+            //                 //console.log("this is the result of the filter" + items[i][0]);
+
+            //                 for (il = 0; il < x.length; il++) {
+            //                     if ((x[il].childNodes[1].innerHTML) === items[i][0]) {
+            //                         image = x[il].childNodes[0].innerHTML;
+            //                         image = "<img src=" + image + "\"alt =\"This is an image of a tree on the Winona State campus\">";
+            //                         name = x[il].childNodes[1].innerHTML;
+            //                         document.getElementById("tree").innerHTML += "<div><p>" + name + image + "</div></p><br>";
+            //                         break;
+            //                     }
+            //                 }
+
+
+            //             }
+            //         }
+            //     };
+            //     xhttp.open("GET", "1.xml", true);
+            //     xhttp.send();
+            // }
         }
 
         function showAll() {

@@ -53,6 +53,10 @@ html {
     font-size: 15px;
 }
 
+.show{
+	border-radius: 0 10px 10px 0;
+}
+
 #bar_down {
     background-color: #4B08A1;
     font-family: Arial, Helvetica, sans-serif;
@@ -130,7 +134,7 @@ html {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -140,13 +144,9 @@ html {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #3C0680;
     display: block;
     transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
 }
 
 .sidenav .closebtn {
@@ -155,6 +155,20 @@ html {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.filter{
+	width: 200px;
+    height: 50px;
+    border: 1px solid #3C0680;
+    background: #3C0680;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    font-size: 20px;
+	margin-left: 25px;
+	margin-top: 20px;
 }
 
 .openbtn {
