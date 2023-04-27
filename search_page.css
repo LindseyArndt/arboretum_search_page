@@ -75,7 +75,7 @@ html {
     float: top;
     background-color: #4B08A1;
     width: 100%;
-	padding: 0px;
+    padding: 0px;
 }
 
 #bar_down li {
@@ -187,8 +187,8 @@ html {
     background-color: rgba(0, 0, 0, 0.246);
     border-radius: 20px;
     display: inline-block;
-	width: 690px;
-	padding: 5px 0px 5px 0px;
+    width: 690px;
+    padding: 5px 0px 5px 0px;
 }
 
 img {
@@ -226,13 +226,13 @@ img {
     display: none;
     overflow: hidden;
     background-color: rgb(0, 0, 0, 0.246);
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 750px) {
-	html{
-		background-size: 700px 600px;
-	}
+    html {
+        background-size: 700px 600px;
+    }
 
     .openbtn {
         font-size: 50px;
@@ -259,70 +259,70 @@ img {
         background-color: #3C0680;
     }
 
-	#search{
-		height: 300px;
-		width: 300px;
-		margin-top: 150px;
-	}
+    #search {
+        height: 300px;
+        width: 300px;
+        margin-top: 150px;
+    }
 
-	.wrap {
-		width: 300px;
-		position: absolute;
-		top: 20%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		margin-right: 500px;
-		display: flex;
-	}
+    .wrap {
+        width: 300px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-right: 500px;
+        display: flex;
+    }
 
-	.show{
-		border-radius:0%;
-		color:#000000;
-	}
+    .show {
+        border-radius: 0%;
+        color: #000000;
+    }
 
-	#allTree div{
-		width: 300px;
-		font-size: 20px;
-		padding: 0px 5px 0px 5px;
-		margin-bottom: 5px;
-	}
+    #allTree div {
+        width: 300px;
+        font-size: 20px;
+        padding: 0px 5px 0px 5px;
+        margin-bottom: 5px;
+    }
 
-	#desc{
-		font-size: 10px;
-	}
+    #desc {
+        font-size: 10px;
+    }
 
-	img{
-		width: 75px;
-		height: 75px;
-	}
+    img {
+        width: 75px;
+        height: 75px;
+    }
 
-	#bar_down {
-		font-size: 12px;
-	}
+    #bar_down {
+        font-size: 12px;
+    }
 
-	#bar_down ul {
-		text-align: center;
-		float: top;
-		background-color: #4B08A1;
-		width: 100%;
-		padding: 0px 0px 0px 0px;
-	}
-	
-	#bar_down li {
-		display: inline-block;
-	}
-	
-	#bar_down li a,
-	#menu li span {
-		display: inline-block;
-		padding: 0px 20px;
-		text-decoration: none;
-		font-weight: 600;
-		text-transform: uppercase;
-	}
-	
-	#bar_down li a {
-		color: rgb(255, 255, 255);
-		background-color: #4B08A1;
-	}
+    #bar_down ul {
+        text-align: center;
+        float: top;
+        background-color: #4B08A1;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+    }
+
+    #bar_down li {
+        display: inline-block;
+    }
+
+    #bar_down li a,
+    #menu li span {
+        display: inline-block;
+        padding: 0px 20px;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    #bar_down li a {
+        color: rgb(255, 255, 255);
+        background-color: #4B08A1;
+    }
 }
