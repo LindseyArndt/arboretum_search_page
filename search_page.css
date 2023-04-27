@@ -16,11 +16,11 @@ html {
     margin: auto;
     margin-top: 200px;
 
-	height:400px;
-	width:700px;
-	border:1px solid #ccc;
-	font:16px/26px Georgia, Garamond, Serif;
-	overflow:auto;
+    height: 400px;
+    width: 700px;
+    border: 1px solid #ccc;
+    font: 16px/26px Georgia, Garamond, Serif;
+    overflow: auto;
 }
 
 .wrap {
@@ -213,13 +213,13 @@ html {
     max-width: fit-content;
 }
 
-#allTree div{
-	font-size: 50px;
-	background-color: rgba(0, 0, 0, 0.246);
-	padding: 10px 5px;
-	border-radius: 20px;
-	display: inline-block;
-	/* overflow:auto;
+#allTree div {
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.246);
+    padding: 10px 5px;
+    border-radius: 20px;
+    display: inline-block;
+    /* overflow:auto;
 	height: 200px;
 
 	height:120px;
@@ -230,17 +230,17 @@ html {
 }
 
 img {
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
-	float: left;
-	border-radius: 25%;
-	padding: 0em .5em;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+    border-radius: 25%;
+    padding: 0em .5em;
 }
 
 .collapsible {
-    background-color: #777;
-    color: white;
+    background-color: #F1F2F3;
+    color: #4B08A1;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -259,5 +259,5 @@ img {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #000000;
 }

@@ -18,7 +18,6 @@ function myFunction(xml) {
     xmlDoc = xml.responseXML; //Response returned as XML data
     txt = "";
     entered = String(document.getElementById("searchBox").value);
-    alert(entered);
     x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
     console.log(x[1]);
     console.log(entered);
@@ -71,7 +70,7 @@ function myFunctionWithCollapse(xml) {
     xmlDoc = xml.responseXML; //Response returned as XML data
     txt = "";
     entered = String(document.getElementById("searchBox").value);
-    alert(entered);
+
     x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
     console.log(x[1]);
     console.log(entered);
