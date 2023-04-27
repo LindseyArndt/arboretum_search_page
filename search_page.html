@@ -32,13 +32,19 @@
         <!-- method="POST" -->
         <form method="POST" class="wrap">
             <!-- id ="inputSize" -->
-            <input placeholder="Search... " type="text" name="searchBox" class="searchBar"><br>
-            <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-            <!-- id="data" -->
-            <p id="newHTML"></p>
-        </form>
-    </div>
+            <input id="searchBox" placeholder="Search... " type="text" name="searchBox" class="searchBar"><br>
+            <input type="button" class="searchButton" onclick="loadXMLDoc()"><br>
 
+            <!-- id="data" -->
+        </form>
+        <p id="newHTML"></p>
+        <div>
+            <col>
+            <p id="tree"></p>
+            </col>
+
+        </div>
+    </div>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">filter</a>
