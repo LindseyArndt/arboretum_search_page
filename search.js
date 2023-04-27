@@ -112,7 +112,7 @@ function myFunctionWithCollapse(xml) {
 
         //make button not hidden 
         document.getElementById("allTree").innerHTML = "";
-        document.getElementById('togglee').style.visibility = 'visible';
+        document.getElementById('nameID').style.visibility = 'visible';
 
         document.getElementById("nameAndImage").innerHTML = txtPrint;
         document.getElementById("nameID").innerHTML = name;
