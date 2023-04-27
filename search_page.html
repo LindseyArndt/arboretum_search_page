@@ -13,10 +13,10 @@
     <h1>
         <div id = menu>
             <ul>
-                <li><a href="search_page.php">Search</a></li>
+                <li><a href="search_page.html">Search</a></li>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="tours.php">Tours</a></li>
-                <li><a href="kwizz.php">Kwizz</a></li>
+                <li><a href="kwiz.html">Kwizz</a></li>
                 <!-- <li id = icon><img style = "width: 160px; height: 80px;"src = "https://openriver.winona.edu/assets/md5images/9c219dc65e0cea6b146b6e2cc3f39453.png" alt = "Arboretumn icon"></li> -->
             </ul>
         </div>
@@ -36,7 +36,24 @@
         </form>
     </div>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">filter</a>
+        <a href="#">filter</a>
+        <a href="#">filter</a>
+        <a href="#">filter</a>
+    </div>
+
     <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+      
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
         function loadXMLDoc() {
             alert("called");
             //Code to do XML HTTP request (see slides) goes here
