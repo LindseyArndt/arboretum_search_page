@@ -290,8 +290,8 @@
                                     image = x[il].childNodes[0].innerHTML;
                                     image = "<img src=" + image + ">";
                                     name = x[il].childNodes[1].innerHTML;
-                                    desc = "<p id=\"desc\">This is a wonderful description of a tree.</p>";
-                                    document.getElementById("allTree").innerHTML += "<div>" + name + image + desc + "</div><br>";
+                                    desc = "<a id=\"desc\"><br>This is a wonderful description of a tree.</a>";
+                                    document.getElementById("allTree").innerHTML += "<div><p>" + name + image + desc + "</div><p><br>";
                                     //console.log(x[i].childNodes[1].innerHTML);
                                     break;
                                 }
