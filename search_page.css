@@ -56,7 +56,7 @@ html {
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #000000;
-	font-size: 10px;
+    font-size: 10px;
 }
 
 #bar_down {
@@ -230,7 +230,7 @@ img {
 
 .collapsible {
     background-color: #3C0680;
-    color: #0000;
+    color: #ffffff;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -242,7 +242,7 @@ img {
 
 .active,
 .collapsible:hover {
-    background-color: #555;
+    background-color: #3C0680;
 }
 
 .content {
