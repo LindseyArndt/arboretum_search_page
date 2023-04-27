@@ -181,6 +181,55 @@ html {
     cursor: pointer;
 }
 
+#allTree div {
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.246);
+    padding: 10px 5px;
+    border-radius: 20px;
+    display: inline-block;
+	float: left;
+	padding: 5px 5px 0px 5px;
+	width: 690px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    float: left;
+    border-radius: 25%;
+    padding: 0px 0px 30px 20px;
+}
+
+.collapsible {
+    background-color: #3C0680;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #3C0680;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.246);
+    color: black;
+}
+
+#desc {
+    font-size: 16px;
+}
+
 @media screen and (max-width: 750px) {
 	html{
 		background-size: 700px 600px;
@@ -231,53 +280,14 @@ html {
 		border-radius:0%;
 		color:#000000;
 	}
-}
 
-#allTree div {
-    font-size: 30px;
-    background-color: rgba(0, 0, 0, 0.246);
-    padding: 10px 5px;
-    border-radius: 20px;
-    display: inline-block;
-	float: left;
-	padding: 5px 5px 0px 5px;
-	width: 690px;
-}
+	#allTree div{
+		/* width: 300px;]
+		 */
+	}
 
-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    float: left;
-    border-radius: 25%;
-    padding: 0px 0px 30px 20px;
-}
-
-.collapsible {
-    background-color: #3C0680;
-    color: #ffffff;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-}
-
-.active,
-.collapsible:hover {
-    background-color: #3C0680;
-}
-
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: rgb(0, 0, 0, 0.246);
-    color: black;
-}
-
-#desc {
-    font-size: 16px;
+	img{
+		/* width: 10px;
+		height: 50px; */
+	}
 }
