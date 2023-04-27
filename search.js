@@ -14,7 +14,7 @@ function loadXMLDoc() {
 }
 
 function myFunction(xml) {
-    var x, i, xmlDoc, txt, entity, name;
+    var x, i, xmlDoc, txt, name;
     xmlDoc = xml.responseXML; //Response returned as XML data
     txt = "";
     entered = String(document.getElementById("searchBox").value);
@@ -22,9 +22,6 @@ function myFunction(xml) {
     x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
     console.log(x[1]);
     console.log(entered);
-    //alert(entered);
-    //"Austrian Pine"
-    //check if the the tree exists
 
     for (i = 0; i < x.length; i++) {
         //console.log(x[i].childNodes[1]);
@@ -68,14 +65,4 @@ function myFunction(xml) {
     else {
         document.getElementById("tree").innerHTML = "This tree does not exist. Please type in another tree.";
     }
-
-
-    //document.body.appendChild(button);
-
-    //txt += "<button type=\"button\" onclick=\"treeCalled(" + name + "," + image + ")\">" + name + "</button><br>";
-    //document.getElementById("newHTML").innerHTML = txt;
-
-    //Description
-    //entity = x[i].childNodes[2].innerHTML;
-    //alert("entity" + entity);
 }
