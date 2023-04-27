@@ -185,13 +185,16 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 36px;
+    font-size: 70px;
     margin-left: 50px;
+	cursor: pointer;
 }
 
 
 @media screen and (max-width: 750px) {
-
+	.openbtn{
+		font-size: 50px;
+	}
 }
 
 #tree {
