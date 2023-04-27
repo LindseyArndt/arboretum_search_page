@@ -1,7 +1,7 @@
 /* Karis is procrastinating :))))) */
 html {
     background-image: url('https://news.winona.edu/wp-content/uploads/2016/04/Arboretum1.jpg');
-    background-size: cover;
+    object-fit: cover;
     background-repeat: no-repeat;
     color: white;
 }
@@ -15,6 +15,12 @@ html {
     background-color: #ffffffaa;
     margin: auto;
     margin-top: 200px;
+
+	height:400px;
+	width:700px;
+	border:1px solid #ccc;
+	font:16px/26px Georgia, Garamond, Serif;
+	overflow:auto;
 }
 
 .wrap {
@@ -203,16 +209,24 @@ html {
     }
 }
 
-#tree {
+#allTree {
     max-width: fit-content;
 }
 
-#tree div{
+#allTree div{
 	font-size: 50px;
 	background-color: rgba(0, 0, 0, 0.246);
 	padding: 10px 5px;
 	border-radius: 20px;
 	display: inline-block;
+	/* overflow:auto;
+	height: 200px;
+
+	height:120px;
+	width:120px;
+	border:1px solid #ccc;
+	font:16px/26px Georgia, Garamond, Serif;
+	overflow:auto; */
 }
 
 img {
