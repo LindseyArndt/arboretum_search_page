@@ -15,7 +15,7 @@ function mostlyB() {
 function mostlyC() {
   var x = document.getElementById("myDIV");
   if (x.innerHTML === "") {
-    x.innerHTML = "You are a Sugar Maple! You are passionate and are fierce, and your friends and family know that your loyalty and support does not come without a somewhat prickly personality. However, they know you have their backCheck out the Tree Search page to find out more information about your tree!";
+    x.innerHTML = "You are a Sugar Maple! You are passionate and are fierce, and your friends and family know that your loyalty and support does not come without a somewhat prickly personality. However, they know you have their back. Check out the Tree Search page to find out more information about your tree!";
   }
 }
 
