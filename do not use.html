@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<header>
+    <meta charset="utf-8">
+    <meta name="author" content="Lindsey, Ahlea, Karis, Angie">
+    <title>Tree Search</title>
+    <link rel="stylesheet" href="search_page.css">
+</header>
+<!-- id= "bar_up" -->
+
+<head>
+    <h1>
+        <!-- id image -->
+        <div>Arb Icon</div>
+        <!-- id menu -->
+        <div>
+            <ul>
+                <li><a href="search_page.php">Search</a></li>
+                <li><a href="home.php">Home</a></li>
+                <li><a href="tours.php">Tours</a></li>
+                <li><a href="kwizz.php">Kwizz</a></li>
+            </ul>
+        </div>
+    </h1>
+</head>
+<!-- id="search" -->
+
+<body>
+    <div>
+        <!-- method="POST" -->
+        <form method="POST">
+            <!-- id ="inputSize" -->
+            <input id="searchBox" placeholder="Search... " type="text" name="searchBox"><br>
+            <input type="button" value="Submit" onclick="loadXMLDoc();"><br>
+            <!-- id="data" -->
+            <p id="newHTML"></p>
+        </form>
+        <form method="POST">
+            <!-- id ="inputSize" -->
+            <input type="button" value="Show All" onclick="showAll();"><br>
+            <!-- id="data" -->
+            <p id="showAll"></p>
+            <p id="showTree"></p>
+        </form>
+    </div>
+    <div>
+    </div>
+    <script>
+        function loadXMLDoc() {
+            alert("called");
+            //Code to do XML HTTP request (see slides) goes here
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    // Run a function to handle XML data recv’d
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET", "1.xml", true);
+            xhttp.send();
+        }
+        function showAll() {
+            alert("called");
+            //Code to do XML HTTP request (see slides) goes here
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    // Run a function to handle XML data recv’d
+                    xmlDoc = this.responseXML;
+                    x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
+                    txt = "";
+                    for (i = 0; i < x.length; i++) {
+                        //console.log(x[i].childNodes[1]);
+                        name = x[i].childNodes[1].innerHTML;
+                        image = x[i].childNodes[0].innerHTML;
+                        image = image.replace('//', '');
+                        txt += "<button type=\"button\" onclick=\"treeCalled(" + name + "," + image + ")\">" + name + "</button><br>";
+                        //console.log(x[i].childNodes[1].innerHTML);
+                    }
+                    document.getElementById("showAll").innerHTML = txt;
+                    console.log(txt);
+                }
+            };
+            xhttp.open("GET", "1.xml", true);
+            xhttp.send();
+        }
+
+        function treeCalled(name, image) {
+            //x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
+            alert("made it");
+            name = x[i].childNodes[1].innerHTML;
+            image = x[i].childNodes[0].innerHTML;
+            image = "<img src=" + imagePrint + ">";
+            txtPrint = name + image;
+            //txtPrint += "<img src=" + image + ">";
+            document.getElementById("showTree").innerHTML = txtPrint;
+        }
+
+        function myFunction(xml) {
+            var x, i, xmlDoc, txt, entity;
+            xmlDoc = xml.responseXML; //Response returned as XML data
+            txt = "";
+            entered = String(document.getElementById("searchBox").value);
+            x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
+            console.log(x[1]);
+            console.log(entered);
+            //alert(entered);
+            //"Austrian Pine"
+            for (i = 0; i < x.length; i++) {
+                //console.log(x[i].childNodes[1]);
+                if ((x[i].childNodes[1].innerHTML) === String(entered)) {
+                    txt += x[i].childNodes[1].innerHTML + "<br>";
+                    //console.log(x[i].childNodes[1].innerHTML);
+                    break;
+                }
+
+            }
+            //for (l = 0; l < 5; l++) {
+            //console.log(x[i].childNodes[l]);
+            //}
+            //image
+            //console.log(txt);
+            image = x[i].childNodes[0].innerHTML;
+            txt += "<img src=" + image + ">";
+            document.getElementById("newHTML").innerHTML = txt;
+
+            //Description
+            entity = x[i].childNodes[2].innerHTML;
+            alert("entity" + entity);
+        }
+    </script>
+
+    <footer id="bar_down">
+        <ul>
+            <li><a href="winona.edu">Winona.edu</a></li>
+            <li>Contact info</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,1 +1,200 @@
 /* Karis is procrastinating :))))) */
+html {
+    background-image: url('https://news.winona.edu/wp-content/uploads/2016/04/Arboretum1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#search {
+    text-align: center;
+    font-size: 30px;
+    padding: 100px 12px;
+    width: 50%;
+    height: 50%;
+    background-color: #ffffffaa;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.wrap {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-right: 500px;
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #314837;
+    background: #314837;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    background-image: url('');
+
+}
+
+.searchBar {
+    width: 100%;
+    border: 3px solid #314837;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+#bar_down {
+    background-color: #b9b59f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 100%;
+    top: 93%;
+    position: fixed;
+	bottom: 0;
+	left:0;
+}
+
+#bar_down ul {
+    text-align: center;
+    float: top;
+    background-color: #b9b59f;
+    width: 100%;
+}
+
+#bar_down li {
+    display: inline-block;
+}
+
+#bar_down li a,
+#menu li span {
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#bar_down li a {
+    color: rgb(0, 0, 0);
+    background-color: #b9b59f;
+}
+
+#bar_up {
+    background-color: #152c18;
+    color: #152c18;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    display: inline-block;
+	left: 0;
+}
+
+#menu {
+    font-size: 20px;
+    background-color: #152c18;
+}
+
+#menu ul {
+    text-align: center;
+    float: top;
+    background-color: #152c18;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a,
+#menu li span {
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#menu li a {
+    color: rgb(255, 255, 255);
+    background-color: #152c18;
+}
+
+#icon {
+    float: left;
+    padding-right: 700px;
+    padding-top: 0px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.openbtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-width: 750px) {
+
+}
+
+#tree {
+    background-color: #4B08A1;
+    max-width: fit-content;
+}

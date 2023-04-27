@@ -1,92 +1,80 @@
 <!doctype html>
 <html>
 
-<header>
+<head>
     <meta charset="utf-8">
     <meta name="author" content="Lindsey, Ahlea, Karis, Angie">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tree Search</title>
+    <script src="search.js"></script>
     <link rel="stylesheet" href="search_page.css">
-</header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <!-- id= "bar_up" -->
 
-<head>
+<header id=bar_up>
     <h1>
-        <!-- id image -->
-        <div>Arb Icon</div>
-        <!-- id menu -->
-        <div>
+        <div id=menu>
             <ul>
-                <li><a href="search_page.php">Search</a></li>
+                <li><a href="search_page.html">Search</a></li>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="tours.php">Tours</a></li>
-                <li><a href="kwizz.php">Kwizz</a></li>
+                <li><a href="kwiz.html">Kwizz</a></li>
+                <!-- <li id = icon><img style = "width: 160px; height: 80px;"src = "https://openriver.winona.edu/assets/md5images/9c219dc65e0cea6b146b6e2cc3f39453.png" alt = "Arboretumn icon"></li> -->
             </ul>
         </div>
     </h1>
-</head>
+</header>
 <!-- id="search" -->
 
 <body>
-    <div>
+    <div class="search" id=search>
         <!-- method="POST" -->
-        <form method="POST" onsubmit="loadXMLDoc();">
+        <form method="POST" class="wrap">
             <!-- id ="inputSize" -->
-            <input id="searchBox" placeholder="Search... " type="text" name="searchBox"><br>
-            <input type="submit" value="Submit"><br>
+            <input id="searchBox" placeholder="Search... " type="text" name="searchBox" class="searchBar"><br>
+            <input type="button" class="searchButton" onclick="loadXMLDoc()"><br>
+
             <!-- id="data" -->
-            <p id="newHTML"></p>
         </form>
+        <p id="newHTML"></p>
+        <div>
+            <col>
+            <p id="tree"></p>
+            </col>
+
+        </div>
     </div>
-    <div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">filter</a>
+        <a href="#">filter</a>
+        <a href="#">filter</a>
+        <a href="#">filter</a>
     </div>
+
+    <span style="font-size:60px;cursor:pointer;" class="openbtn" onclick="openNav()">&#9776;</span>
+
     <script>
-        function loadXMLDoc() {
-            alert("called");
-            //Code to do XML HTTP request (see slides) goes here
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    // Run a function to handle XML data recv’d
-                    myFunction(this);
-                }
-            };
-            xhttp.open("GET", "1.xml", true);
-            xhttp.send();
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
         }
 
-        function myFunction(xml) {
-            var x, i, xmlDoc, txt;
-            xmlDoc = xml.responseXML; //Response returned as XML data
-            txt = "";
-            entered = String(document.getElementById("searchBox").value);
-            x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
-            console.log(x[1]);
-            console.log(entered);
-            alert(entered);
-            //"Austrian Pine"
-            for (i = 0; i < x.length; i++) {
-                console.log(x[i].childNodes[1]);
-                if ((x[i].childNodes[1].innerHTML) === String(entered)) {
-                    txt += x[i].childNodes[1].innerHTML + "<br>";
-                    console.log(x[i].childNodes[1].innerHTML);
-                    break;
-                }
-
-            }
-            console.log(txt);
-            image = x[i].childNodes[0].innerHTML;
-            txt += "<img src=" + image + ">";
-            document.getElementById("newHTML").innerHTML = txt;
-
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
         }
+
+
     </script>
 
     <footer id="bar_down">
         <ul>
             <li><a href="winona.edu">Winona.edu</a></li>
-            <li>Contact info</li>
+            <li><a>Contact info</a></li>
         </ul>
     </footer>
+
 </body>
 
 </html>
