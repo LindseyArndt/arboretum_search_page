@@ -50,7 +50,7 @@ function myFunctionWithCollapse(xml) {
         //alert("made it");
         name = x[i].childNodes[1].innerHTML;
         image = x[i].childNodes[0].innerHTML;
-        image = "<img src=" + image + ">";
+        image = "<img src=" + image + " \"alt =\"This is an image of a tree on the Winona State campus\">";
         desc = "<p id=\"desc\">This is a wonderful description of a tree.</p>";
         txtPrint = name + image + desc;
         //alert(txtPrint);

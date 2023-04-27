@@ -41,7 +41,7 @@
         <!--Trying the collapsible-->
         <button id="nameID" type="button" class="collapsible" onclick="collapse()" style="visibility: hidden;"></button>
 
-        <div class="content">
+        <div class="content" id="contentID">
             <p id="nameAndImage"></p>
         </div>
         <div id="allTree"></div>
@@ -246,7 +246,7 @@
                                 if ((x[il].childNodes[1].innerHTML) === items[i][0]) {
                                     //txt += x[i].childNodes[1].innerHTML + "<br>";
                                     image = x[il].childNodes[0].innerHTML;
-                                    image = "<img src=" + image + ">";
+                                    image = "<img src=" + image + "\"alt =\"This is an image of a tree on the Winona State campus\">";
                                     name = x[il].childNodes[1].innerHTML;
                                     document.getElementById("tree").innerHTML += "<div><p>" + name + image + "</div></p><br>";
                                     //console.log(x[i].childNodes[1].innerHTML);
@@ -267,6 +267,8 @@
             var items, x;
             //set the individual search to hidden 
             document.getElementById('nameID').style.visibility = 'hidden';
+            document.getElementById('nameAndImage').style.visibility = 'hidden';
+            //document.getElementById('contentID').style.visibility = 'hidden';
             $.get("plants.txt", function (data) {
                 items = data.split("\n").map(function (el) { return el.split(","); });
 
@@ -288,7 +290,7 @@
                                 if ((x[il].childNodes[1].innerHTML) === items[i][0]) {
                                     //txt += x[i].childNodes[1].innerHTML + "<br>";
                                     image = x[il].childNodes[0].innerHTML;
-                                    image = "<img src=" + image + ">";
+                                    image = "<img src=\"" + image + "\"alt =\"This is an image of a tree on the Winona State campus\">";
                                     name = x[il].childNodes[1].innerHTML;
                                     desc = "<a id=\"desc\"><br>This is a wonderful description of a tree.</a>";
                                     document.getElementById("allTree").innerHTML += "<br><div>" + image + "<p>" + name + desc + "</div><br>";
