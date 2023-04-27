@@ -3,7 +3,7 @@ html {
     background-image: url('https://news.winona.edu/wp-content/uploads/2016/04/Arboretum1.jpg');
     background-repeat: no-repeat;
     color: white;
-	background-size: cover;
+    background-size: cover;
 }
 
 #search {
@@ -217,19 +217,10 @@ html {
     padding: 10px 5px;
     border-radius: 20px;
     display: inline-block;
-<<<<<<< Updated upstream
-	float: left;
-    /* overflow:auto;
-	height: 200px;
 
-	height:120px;
-	width:120px;
-	border:1px solid #ccc;
-	font:16px/26px Georgia, Garamond, Serif;
-	overflow:auto; */
-=======
-	padding: 10px 5px 5px 5px;
->>>>>>> Stashed changes
+    float: left;
+    padding: 10px 5px 5px 5px;
+
 }
 
 img {
