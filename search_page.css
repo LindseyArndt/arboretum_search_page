@@ -207,3 +207,14 @@ html {
     background-color: #4B08A1;
     max-width: fit-content;
 }
+
+#tree{
+	font-size: 50px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	object-fit: contain;
+	float: left;
+  }
