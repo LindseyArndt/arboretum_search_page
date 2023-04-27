@@ -6,14 +6,18 @@
 } */
 
 body {
+    padding-top: 150px;
+    padding-bottom: 60px;
     font-family: Arial, sans-serif;
     font-size: 16px;
     background-color: aliceblue;
   }
   form{
+    text-align: center;
     margin-top:20px;
   }
   .quiz-container {
+    text-align: center;
     width: 80%;
     margin-top: 80;
   }
@@ -23,6 +27,7 @@ body {
   }
   
   .question {
+    text-align: center;
     width:45%;
     margin-bottom: 20px;
     background-color: #fff;
@@ -75,8 +80,8 @@ body {
   }
 
   #bar_up{
-    background-color: #152c18;
-    color: #152c18;
+    background-color: #3C0680;
+    color: #3C0680;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 30px;
     width: 100%;
@@ -87,13 +92,13 @@ body {
 
 #menu{
     font-size: 20px;
-	background-color: #152c18;
+	background-color: #3C0680;
 }
 
 #menu ul{
 	text-align: center;
 	float: top;
-	background-color: #152c18;
+	background-color: #3C0680;
 }
 
 #menu li{
@@ -110,11 +115,11 @@ body {
 
 #menu li a{
 	color: rgb(255, 255, 255);
-	background-color: #152c18;
+	background-color: #3C0680;
 }
 
 #bar_down{
-  background-color:#b9b59f;
+  background-color:#3C0680;
   font-family:Arial, Helvetica, sans-serif;
   font-size: 20px;
   width: 100%;
@@ -126,7 +131,7 @@ bottom: 0;
 #bar_down ul{
 text-align: center;
 float: top;
-background-color: #b9b59f;
+background-color: #3C0680;
 width: 100%;
 }
 
@@ -143,6 +148,6 @@ text-transform: uppercase;
 }
 
 #bar_down li a{
-color: rgb(0, 0, 0);
-background-color: #b9b59f;
+  color: rgb(255, 255, 255);
+background-color: #3C0680;
 }

@@ -1,3 +1,31 @@
+function mostlyA() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "") {
+    x.innerHTML = "Mostly A";
+   }
+}
+
+function mostlyB() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "") {
+    x.innerHTML = "Mostly B";
+  }
+}
+
+function mostlyC() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "") {
+    x.innerHTML = "Mostly C";
+  }
+}
+
+function mostlyD() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "") {
+    x.innerHTML = "Mostly D";
+  }
+}
+
 // const quizForm = document.getElementById('quiz-form');
 // const resultDiv = document.getElementById('result');
 // const correctAnswers = ['a', 'a'];
