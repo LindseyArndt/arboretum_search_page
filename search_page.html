@@ -44,6 +44,7 @@
         <div class="content">
             <p id="nameAndImage"></p>
         </div>
+        <div id="allTree"></div>
     </div>
 
 
@@ -287,7 +288,7 @@
                                     image = x[il].childNodes[0].innerHTML;
                                     image = "<img src=" + image + ">";
                                     name = x[il].childNodes[1].innerHTML;
-                                    document.getElementById("tree").innerHTML += "<div><p>" + name + image + "</div><br>";
+                                    document.getElementById("allTree").innerHTML += "<div><p>" + name + image + "</div><br>";
                                     //console.log(x[i].childNodes[1].innerHTML);
                                     break;
                                 }
