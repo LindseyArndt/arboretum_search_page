@@ -34,7 +34,7 @@ function myFunction(xml) {
             break;
         }
     }
-    if (i > 0 && i != x.length) {
+    if (i >= 0 && i != x.length) {
         image = x[i].childNodes[0].innerHTML;
         image = "<img src=" + image + ">";
         name = x[i].childNodes[1].innerHTML;
