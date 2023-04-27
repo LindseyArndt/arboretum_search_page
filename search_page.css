@@ -60,7 +60,7 @@ html {
 }
 
 #bar_down {
-    background-color: #b9b59f;
+    background-color: #4B08A1;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     width: 100%;
@@ -73,7 +73,7 @@ html {
 #bar_down ul {
     text-align: center;
     float: top;
-    background-color: #b9b59f;
+    background-color: #4B08A1;
     width: 100%;
 }
 
@@ -91,8 +91,8 @@ html {
 }
 
 #bar_down li a {
-    color: rgb(0, 0, 0);
-    background-color: #b9b59f;
+    color: rgb(255, 255, 255);
+    background-color: #4B08A1;
 }
 
 #bar_up {
