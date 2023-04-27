@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta name="author" content="Lindsey, Ahlea, Karis, Angie">
     <title>Tree Search</title>
+    <script src="search.js"></script>
     <link rel="stylesheet" href="search_page.css">
 </head>
 <!-- id= "bar_up" -->
 
-<header id = bar_up>
+<header id=bar_up>
     <h1>
-        <div id = menu>
+        <div id=menu>
             <ul>
                 <li><a href="search_page.php">Search</a></li>
                 <li><a href="home.php">Home</a></li>
@@ -25,58 +26,16 @@
 <!-- id="search" -->
 
 <body>
-    <div class = "search" id=search>
+    <div class="search" id=search>
         <!-- method="POST" -->
-        <form method="POST" onsubmit="loadXMLDoc();" class="wrap">
+        <form method="POST" class="wrap">
             <!-- id ="inputSize" -->
             <input placeholder="Search... " type="text" name="searchBox" class="searchBar"><br>
-            <input type="button" class="searchButton"><br>
+            <input type="button" class="searchButton" onclick="loadXMLDoc()"><br>
             <!-- id="data" -->
             <p id="newHTML"></p>
         </form>
     </div>
-
-    <script>
-        function loadXMLDoc() {
-            alert("called");
-            //Code to do XML HTTP request (see slides) goes here
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    // Run a function to handle XML data recv’d
-                    myFunction(this);
-                }
-            };
-            xhttp.open("GET", "1.xml", true);
-            xhttp.send();
-        }
-
-        function myFunction(xml) {
-            var x, i, xmlDoc, txt;
-            xmlDoc = xml.responseXML; //Response returned as XML data
-            txt = "";
-            entered = String(document.getElementById("searchBox").value);
-            x = xmlDoc.getElementsByTagName("ThemeEntityAbridgedData");
-            console.log(x[1]);
-            console.log(entered);
-            alert(entered);
-            //"Austrian Pine"
-            for (i = 0; i < x.length; i++) {
-                console.log(x[i].childNodes[1]);
-                if ((x[i].childNodes[1].innerHTML) === String(entered)) {
-                    txt += x[i].childNodes[1].innerHTML + "<br>";
-                    console.log(x[i].childNodes[1].innerHTML);
-                    break;
-                }
-
-            }
-            console.log(txt);
-            image = x[i].childNodes[0].innerHTML;
-            txt += "<img src=" + image + ">";
-            document.getElementById("newHTML").innerHTML = txt;
-
-        }
-    </script>
 
     <footer id="bar_down">
         <ul>
@@ -84,6 +43,7 @@
             <li><a>Contact info</a></li>
         </ul>
     </footer>
+
 </body>
 
 </html>
