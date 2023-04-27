@@ -1,212 +1,221 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <Title>Search Filters</Title>
-        <style>
-            body {background-color: green;}
-            h2   {text-align: center;}
-        </style>
-        <script data-require="jquery@3.0.0" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
-    </head>
-    <body>
-        <form>
+
+<head>
+    <Title>Search Filters</Title>
+    <style>
+        body {
+            background-color: green;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+    <script data-require="jquery@3.0.0" data-semver="3.0.0"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+</head>
+
+<body>
+    <form>
+        <fieldset>
             <fieldset>
-                <fieldset>
-                    <legend>Type of Tree</legend>
-        
-                    <div>
-                      <input type="checkbox" id="tree" name="tree">
-                      <label for="tree">Tree</label>
-                    </div>
-        
-                    <div>
-                        <input type="checkbox" id="bush" name="bush">
-                        <label for="bush">Bush</label>
-                    </div>
-                </fieldset>
-        
-                <fieldset>
-                    <legend>Flowers?</legend>
-        
-                    <div>
-                      <input type="checkbox" id="with" name="with">
-                      <label for="with">With Flowers</label>
-                    </div>
-        
-                    <div>
-                        <input type="checkbox" id="without" name="without">
-                        <label for="without">Without Flowers</label>
-                    </div>
-                </fieldset>
-        
-                <fieldset>
-                    <legend>Height</legend>
-        
-                    <div>
-                      <input type="checkbox" id="less-five" name="less-five">
-                      <label for="less-five">&#60 5'0"</label>
-                    </div>
-        
-                    <div>
-                        <input type="checkbox" id="between" name="between">
-                        <label for="between">5'0" - 6'0"</label>
-                      </div>
-        
-                    <div>
-                        <input type="checkbox" id="great-five" name="great-five">
-                        <label for="great-five">&#62 6'0"</label>
-                    </div>
-                </fieldset>
-                <button onclick="showAll()" type="button">Show All</button>
+                <legend>Type of Tree</legend>
+
+                <div>
+                    <input type="checkbox" id="tree" name="tree">
+                    <label for="tree">Tree</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="bush" name="bush">
+                    <label for="bush">Bush</label>
+                </div>
             </fieldset>
 
-            <div>
-                <button onclick="filters()" type="button">Apply Filters</button>
-            </div>
-        </form>
+            <fieldset>
+                <legend>Flowers?</legend>
 
-        <div id="result"></div>
-        <p id="pic"></p>
-        <p id="newHTML" style="text-align: center;"></p>
-    </body>
-    <script>
-        var items = $.get("plants.txt", function(data) {
-            items = data.split("\n").map(function(el){ return el.split(",");});
+                <div>
+                    <input type="checkbox" id="with" name="with">
+                    <label for="with">With Flowers</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="without" name="without">
+                    <label for="without">Without Flowers</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Height</legend>
+
+                <div>
+                    <input type="checkbox" id="less-five" name="less-five">
+                    <label for="less-five">&#60 5'0"</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="between" name="between">
+                    <label for="between">5'0" - 6'0"</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="great-five" name="great-five">
+                    <label for="great-five">&#62 6'0"</label>
+                </div>
+            </fieldset>
+            <button onclick="showAll()" type="button">Show All</button>
+        </fieldset>
+
+        <div>
+            <button onclick="filters()" type="button">Apply Filters</button>
+        </div>
+    </form>
+
+    <div id="result"></div>
+    <p id="pic"></p>
+    <p id="newHTML" style="text-align: center;"></p>
+</body>
+<script>
+    var items = $.get("plants.txt", function (data) {
+        items = data.split("\n").map(function (el) { return el.split(","); });
+    });
+
+    function filters() {
+        $.get("plants.txt", function (data) {
+            items = data.split("\n").map(function (el) { return el.split(","); });
         });
 
-        function filters() {
-            $.get("plants.txt", function(data) {
-                items = data.split("\n").map(function(el){ return el.split(",");});
-            });
+        var tree = document.getElementById("tree");
+        var bush = document.getElementById("bush");
+        var flow = document.getElementById("with");
+        var noflow = document.getElementById("without");
+        var lfive = document.getElementById("less-five");
+        var betfive = document.getElementById("between");
+        var gfive = document.getElementById("great-five");
 
-            console.log(items); 
+        if (tree.checked == true && bush.checked == true) {
 
-            var tree = document.getElementById("tree");
-            var bush = document.getElementById("bush");
-            var flow = document.getElementById("with");
-            var noflow = document.getElementById("without");
-            var lfive = document.getElementById("less-five");
-            var betfive = document.getElementById("between");
-            var gfive = document.getElementById("great-five");
-
-            if (tree.checked == true && bush.checked == true) {
-                
-            } else {
-                if (tree.checked == true){
-                    for (i = 0; i < items.length; i++) {
-                        if (!items[i].includes("tree")) {
-                            items.splice(i, 1);
-                            i--;
-                        }
-                    }
-                }
-                if(bush.checked == true){
-                    for (i = 0; i < items.length; i++) {
-                        if (!items[i].includes("bush")) {
-                            items.splice(i, 1);
-                            i--;
-                        }
-                    }
-                }
-            }
-
-            if (flow.checked == true && noflow.checked == true) {
-                
-            } else {
-                if (flow.checked == true){
-                    for (i = 0; i < items.length; i++) {
-                        if (!items[i].includes("yes")) {
-                            items.splice(i, 1);
-                            i--;
-                        }
-                    }
-                }
-                if(noflow.checked == true){
-                    for (i = 0; i < items.length; i++) {
-                        if (!items[i].includes("no")) {
-                            items.splice(i, 1);
-                            i--;
-                        }
-                    }
-                }
-            }
-            
-            if (lfive.checked == true && betfive.checked == true && gfive.checked == true) {
-                
-            } else if (lfive.checked == true && betfive.checked == true){
+        } else {
+            if (tree.checked == true) {
                 for (i = 0; i < items.length; i++) {
-                    var height = items[i][2];
-                    if (!(height < "6")) {
+                    if (!items[i].includes("tree")) {
                         items.splice(i, 1);
                         i--;
                     }
                 }
-            } else if (betfive.checked == true && gfive.checked == true) {
+            }
+            if (bush.checked == true) {
                 for (i = 0; i < items.length; i++) {
-                    var height = items[i][2];
-                    if (!(height >= "5")) {
+                    if (!items[i].includes("bush")) {
                         items.splice(i, 1);
                         i--;
-                    }
-                }
-            } else if (lfive.checked == true && gfive.checked == true) {
-                for (i = 0; i < items.length; i++) {
-                    var height = items[i][2];
-                    if (!(height == "4") && !(height == "6")) {
-                        items.splice(i, 1);
-                        i--;
-                    }
-                }
-            } else {
-                if (lfive.checked == true){
-                    for (i = 0; i < items.length; i++) {
-                        var height = items[i][2];
-                        if (!(height == "4")) {
-                            items.splice(i, 1);
-                            i--;
-                        }
-                    }
-                }
-                if(betfive.checked == true){
-                    for (i = 0; i < items.length; i++) {
-                        var height = items[i][2];
-                        if (!(height == "5")) {
-                            items.splice(i, 1);
-                            i--;
-                        }
-                    }
-                }
-                if(gfive.checked == true){
-                    for (i = 0; i < items.length; i++) {
-                        var height = items[i][2];
-                        if (!(height == "6")) {
-                            items.splice(i, 1);
-                            i--;
-                        }
                     }
                 }
             }
+        }
+
+        if (flow.checked == true && noflow.checked == true) {
+
+        } else {
+            if (flow.checked == true) {
+                for (i = 0; i < items.length; i++) {
+                    if (!items[i].includes("yes")) {
+                        items.splice(i, 1);
+                        i--;
+                    }
+                }
+            }
+            if (noflow.checked == true) {
+                for (i = 0; i < items.length; i++) {
+                    if (!items[i].includes("no")) {
+                        items.splice(i, 1);
+                        i--;
+                    }
+                }
+            }
+        }
+
+        if (lfive.checked == true && betfive.checked == true && gfive.checked == true) {
+
+        } else if (lfive.checked == true && betfive.checked == true) {
             for (i = 0; i < items.length; i++) {
+                var height = items[i][2];
+                if (!(height < "6")) {
+                    items.splice(i, 1);
+                    i--;
+                }
+            }
+        } else if (betfive.checked == true && gfive.checked == true) {
+            for (i = 0; i < items.length; i++) {
+                var height = items[i][2];
+                if (!(height >= "5")) {
+                    items.splice(i, 1);
+                    i--;
+                }
+            }
+        } else if (lfive.checked == true && gfive.checked == true) {
+            for (i = 0; i < items.length; i++) {
+                var height = items[i][2];
+                if (!(height == "4") && !(height == "6")) {
+                    items.splice(i, 1);
+                    i--;
+                }
+            }
+        } else {
+            if (lfive.checked == true) {
+                for (i = 0; i < items.length; i++) {
+                    var height = items[i][2];
+                    if (!(height == "4")) {
+                        items.splice(i, 1);
+                        i--;
+                    }
+                }
+            }
+            if (betfive.checked == true) {
+                for (i = 0; i < items.length; i++) {
+                    var height = items[i][2];
+                    if (!(height == "5")) {
+                        items.splice(i, 1);
+                        i--;
+                    }
+                }
+            }
+            if (gfive.checked == true) {
+                for (i = 0; i < items.length; i++) {
+                    var height = items[i][2];
+                    if (!(height == "6")) {
+                        items.splice(i, 1);
+                        i--;
+                    }
+                }
+            }
+        }
+        for (i = 0; i < items.length; i++) {
+            //results items[i][0] is the name 
+            console.log(items[i][0]);
+        }
+    }
+
+    function showAll() {
+        var items;
+        $.get("plants.txt", function (data) {
+            items = data.split("\n").map(function (el) { return el.split(","); });
+
+            for (i = 0; i < items.length; i++) {
+                //show all items[i][0] is name
                 console.log(items[i][0]);
             }
-        }
+        });
+        document.getElementById("tree").checked = false;
+        document.getElementById("bush").checked = false;
+        document.getElementById("with").checked = false;
+        document.getElementById("without").checked = false;
+        document.getElementById("less-five").checked = false;
+        document.getElementById("between").checked = false;
+        document.getElementById("great-five").checked = false;
+    }
+</script>
 
-        function showAll() {
-            var items;
-            $.get("plants.txt", function(data) {
-                items = data.split("\n").map(function(el){ return el.split(",");});
-        
-                for (i = 0; i < items.length; i++) {
-                    console.log(items[i][0]);
-                }
-            });
-            document.getElementById("tree").checked = false;
-            document.getElementById("bush").checked = false;
-            document.getElementById("with").checked = false;
-            document.getElementById("without").checked = false;
-            document.getElementById("less-five").checked = false;
-            document.getElementById("between").checked = false;
-            document.getElementById("great-five").checked = false;
-        }
-    </script>
 </html>
