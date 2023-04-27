@@ -207,15 +207,19 @@ html {
     max-width: fit-content;
 }
 
-#tree p{
+#tree div{
 	font-size: 50px;
-	border: 5px solid red;
+	background-color: rgba(0, 0, 0, 0.246);
 	padding: 10px 5px;
+	border-radius: 20px;
+	display: inline-block;
 }
 
 img {
-	width: 200px;
-	height: 200px;
-	object-fit: contain;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
 	float: left;
+	border-radius: 25%;
+	padding: 0em .5em;
 }
