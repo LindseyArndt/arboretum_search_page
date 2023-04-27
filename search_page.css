@@ -207,7 +207,6 @@ html {
     max-width: fit-content;
 }
 
-<<<<<<< Updated upstream
 #tree div{
 	font-size: 50px;
 	background-color: rgba(0, 0, 0, 0.246);
@@ -223,18 +222,6 @@ img {
 	float: left;
 	border-radius: 25%;
 	padding: 0em .5em;
-=======
-#tree p {
-    font-size: 50px;
-    border: 5px solid red;
-    padding: 10px 5px;
-}
-
-img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-    float: left;
 }
 
 .collapsible {
@@ -259,5 +246,4 @@ img {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
->>>>>>> Stashed changes
 }
