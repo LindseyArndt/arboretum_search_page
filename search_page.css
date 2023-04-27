@@ -204,12 +204,13 @@ html {
 }
 
 #tree {
-    background-color: #4B08A1;
     max-width: fit-content;
 }
 
-#tree{
+#tree p{
 	font-size: 50px;
+	border: 5px solid red;
+	padding: 10px 5px;
 }
 
 img {
@@ -217,4 +218,4 @@ img {
 	height: 200px;
 	object-fit: contain;
 	float: left;
-  }
+}
