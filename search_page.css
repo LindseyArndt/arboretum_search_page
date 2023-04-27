@@ -182,6 +182,10 @@ html {
 }
 
 @media screen and (max-width: 750px) {
+	html{
+		background-size: 700px 600px;
+	}
+
     .openbtn {
         font-size: 50px;
         margin-left: 20px;
@@ -206,6 +210,27 @@ html {
         color: rgb(255, 255, 255);
         background-color: #3C0680;
     }
+
+	#search{
+		height: 300px;
+		width: 300px;
+		margin-top: 150px;
+	}
+
+	.wrap {
+		width: 300px;
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin-right: 500px;
+		display: flex;
+	}
+
+	.show{
+		border-radius:0%;
+		color:#000000;
+	}
 }
 
 #allTree div {
