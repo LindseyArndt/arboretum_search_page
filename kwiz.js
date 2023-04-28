@@ -2,7 +2,7 @@ function mostlyA() {
   var x = document.getElementById("myDIV");
   if (x.innerHTML === "") {
     x.innerHTML = "You are a Pagoda Dogwood! Your healing nature and kind personality make you a favorite among friends, and your versatility allows you to enjoy a bunch of different activites. Check out the Search page to find out more information about your tree!";
-   }
+  }
 }
 
 function mostlyB() {
